@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+   
+    color:#F7F1DE;
+    font-family:Georgia, serif;
+}
+body{
+    background:
+    linear-gradient(
+        135deg,
+        #1f150c,
+        #2b170c,
+        #1f150c
+    );
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    border-bottom:2px solid #FFDA62;
+}
+
+.left,
+.right{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    font-size:20px;
+}
+
+.music{
+    height:30px;
+    width:30px;
+    background:#F7F1DE;
+}
+
+/* HERO SECTION */
+
+.herosection{
+    display:flex;
+    justify-content:space-between;
+    align-items:stretch;
+    margin:30px;
+    border:2px solid #FFDA62;
+}
+
+/* LEFT */
+
+.hero1{
+    flex: 1;
+    padding:20px;
+    border-right:2px solid #FFDA62;
+}
+.hero1,
+.compositions,
+.instrument{
+    transition:0.3s;
+}
+
+.hero1:hover,
+.compositions:hover,
+.instrument:hover{
+    transform:translateY(-4px);
+}
+.moz{
+    width:100%;
+    max-width:350px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+}
+
+
+.moz:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+.head{
+    font-size:42px;
+    margin-top:20px;
+}
+
+.amaad{
+    margin-top:15px;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.amad1{
+    margin-top:20px;
+    font-size:25px;
+}
+
+.amad{
+    margin-top:10px;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* MIDDLE */
+
+.compositions{
+    
+    flex:1;
+
+    padding:30px;
+    border-right:2px solid #FFDA62;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.comp{
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.comp2{
+    font-size:20px;
+    line-height:2.5;
+    padding-left:20px;
+}
+
+/* RIGHT */
+
+.instrument{
+    flex: 1;
+    padding:20px;
+}
+.instrument:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+.instrument h2{
+    margin-bottom:15px;
+}
+
+.piano{
+    width:100%;
+    max-width:350px;
+    display:block;
+}
+
+
+.quote{
+    margin:25px 0;
+    padding-left:15px;
+    border-left:4px solid #FFDA62;
+    font-style:italic;
+    line-height:1.8;
+    color:#E8D9B5;
+}
+
+audio{
+    margin-top:15px;
+    width:100%;
+     filter: sepia(100%);
+}
+.manuscript{
+    width:100%;
+    margin-top:40px;
+    max-height: 250px;
+    border-radius:10px;
+    object-fit: cover;
+    display:block;
+    border: 2px solid #FFDA62;
+    transition:0.3s;
+}
+
+
+.manuscript:hover{
+    transform:scale(1.02);
+}
+
+.manu-text{
+    margin-top:12px;
+    text-align:center;
+    font-style:italic;
+    color:#d8c8a3;
+}
+.comp2 li{
+    border-bottom:1px solid rgba(255,218,98,0.3);
+    padding:10px 0;
+}
+.moz,
+.piano,
+.manuscript{
+    border-radius:12px;
+}
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1024px){
+
+    .herosection{
+        flex-wrap:wrap;
+    }
+
+    .hero1{
+        width:50%;
+        border-right:2px solid #FFDA62;
+    }
+
+    .compositions{
+        width:50%;
+        border-right:none;
+    }
+
+    .instrument{
+        width:100%;
+        border-top:2px solid #FFDA62;
+    }
+
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .left,
+    .right{
+        gap:15px;
+        font-size:16px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .herosection{
+        flex-direction:column;
+        margin:15px;
+    }
+
+    .hero1,
+    .compositions,
+    .instrument{
+        width:100%;
+        border-right:none;
+        border-bottom:2px solid #FFDA62;
+    }
+
+    .instrument{
+        border-bottom:none;
+    }
+
+    .head{
+        font-size:32px;
+    }
+
+    .comp{
+        font-size:28px;
+    }
+
+    .comp2{
+        font-size:18px;
+    }
+
+    .moz,
+    .piano,
+    .manuscript{
+        width:100%;
+        max-width:100%;
+    }
+
+    audio{
+        width:100%;
+    }
+
+}
